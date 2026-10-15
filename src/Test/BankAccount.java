@@ -5,6 +5,16 @@ public class BankAccount {
     private long accountNumber;
     private double balance;
 
+    private int creditScore;
+
+    protected int getCreditScore() {
+        return creditScore;
+    }
+
+    protected void setCreditScore(int creditScore) {
+        this.creditScore = creditScore;
+    }
+
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
