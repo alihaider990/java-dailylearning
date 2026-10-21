@@ -1,8 +1,8 @@
 package com.engineeringdigest.corejava.test;
 
-public class utils {
+public interface utils{
 
-    public static final double PI = 3.123;
+double PI = 3.123;
     public static int min(int a,int b){
         if(a < b){
             return  a;
