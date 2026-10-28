@@ -1,15 +1,10 @@
 package com.engineeringdigest.corejava.innerClasses;
 
-import java.lang.classfile.attribute.ExceptionsAttribute;
-import java.net.CacheRequest;
-
 public class Test {
-    public static void main(String[] args){
-  Car car = new Car("mercedes");
-  Car.Engine engine = car.new Engine();
-
-       engine.start();
-       engine.stop();
+    public static void main(String[] args) {
+        Hotel hotel = new Hotel("nasheela hotel",90,34);
+hotel.reserveRoom("ali",-15);
+hotel.reserveRoom("",45);
 
     }
 }

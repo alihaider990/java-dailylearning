@@ -2,8 +2,8 @@ package com.engineeringdigest.corejava.innerClasses;
 
 public class Car {
 
-    private String model;
-    private boolean isEngineOn;
+    private static String model;
+    private static boolean isEngineOn;
 
     public Car(String model) {
         this.model = model;
@@ -11,7 +11,10 @@ public class Car {
     }   // constructor ends here
 
     // ---------- Inner class (at class level, NOT inside the constructor) ----------
-    public class Engine {
+    public static class Engine {
+
+        public Engine(Car car) {
+        }
 
         public void start() {
             if (!isEngineOn) {
